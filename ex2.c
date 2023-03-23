@@ -4,7 +4,7 @@ int cubo(int n)
     if (n == 0)
         return 0;
     else
-        return pow(n, 3) + (n-1);
+        return pow(n, 3) + cubo(n-1)
 }
 
 double main () {
